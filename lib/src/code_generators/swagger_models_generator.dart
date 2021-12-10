@@ -234,7 +234,7 @@ abstract class SwaggerModelsGenerator {
     }
 
     if (exceptionWords.contains(className)) {
-      return 'Object';
+      return '\$${className.capitalize}';
     }
 
     if (className.isEmpty) {
